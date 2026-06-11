@@ -1,0 +1,22 @@
+<!-- @dsCard group="Colors" viewport="700x130" name="Surface pairings" subtitle="How ink, paper and taupe combine" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; font-family: var(--font-body); background: var(--mxa-paper); }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding:24px; }
+  .tile { height:80px; border-radius:6px; display:flex; flex-direction:column; justify-content:center; padding:0 18px; }
+  .t { font-family:var(--font-display); font-weight:700; font-size:18px; }
+  .s { font-size:12px; margin-top:3px; letter-spacing:.14em; text-transform:uppercase; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="tile" style="background:var(--mxa-ink)"><span class="t" style="color:var(--mxa-paper)">Cover</span><span class="s" style="color:var(--mxa-taupe)">Ink + taupe</span></div>
+    <div class="tile" style="background:var(--mxa-paper);border:1px solid var(--mxa-sand)"><span class="t" style="color:var(--mxa-ink)">Body page</span><span class="s" style="color:var(--mxa-taupe)">Paper + taupe</span></div>
+    <div class="tile" style="background:var(--mxa-paper-2)"><span class="t" style="color:var(--mxa-charcoal)">Panel</span><span class="s" style="color:var(--mxa-stone)">Beige sunken</span></div>
+  </div>
+</body>
+</html>

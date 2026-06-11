@@ -1,0 +1,29 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Neutrals — paper to ink" subtitle="Warm editorial neutral ramp" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; font-family: var(--font-body); background: var(--mxa-paper); }
+  .row { display:flex; gap:0; padding:20px; }
+  .sw { flex:1; }
+  .chip { height:64px; border-radius:6px; border:1px solid rgba(8,12,17,.08); }
+  .name { font-size:11px; font-weight:500; color:var(--text-body); margin-top:8px; letter-spacing:.01em; }
+  .hex { font-size:11px; color:var(--text-muted); font-family:var(--font-mono); margin-top:2px; }
+  .grid { display:grid; grid-template-columns:repeat(8,1fr); gap:12px; padding:24px; }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--mxa-ink)"></div><div class="name">Ink</div><div class="hex">#080C11</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-charcoal)"></div><div class="name">Charcoal</div><div class="hex">#282828</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-graphite)"></div><div class="name">Graphite</div><div class="hex">#4A4945</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-stone)"></div><div class="name">Stone</div><div class="hex">#8C887F</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-taupe)"></div><div class="name">Taupe</div><div class="hex">#C9B8A7</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-sand)"></div><div class="name">Sand</div><div class="hex">#E4DACE</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-paper-2)"></div><div class="name">Paper 2</div><div class="hex">#F3F0E2</div></div>
+    <div class="sw"><div class="chip" style="background:var(--mxa-paper)"></div><div class="name">Paper</div><div class="hex">#FAF6F1</div></div>
+  </div>
+</body>
+</html>

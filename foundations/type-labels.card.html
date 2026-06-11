@@ -1,0 +1,26 @@
+<!-- @dsCard group="Type" viewport="700x150" name="Section label & list markers" subtitle="Taupe uppercase labels + numbered clauses" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; font-family: var(--font-body); background: var(--mxa-paper); padding:26px 32px; }
+  .label { font-family:var(--font-display); font-weight:700; color:var(--mxa-taupe); text-transform:uppercase; letter-spacing:.16em; font-size:15px; }
+  .rule { height:2px; width:48px; background:var(--mxa-taupe); margin:10px 0 18px; }
+  .clauses { display:flex; gap:26px; }
+  .c { display:flex; gap:8px; align-items:baseline; }
+  .n { font-family:var(--font-display); font-weight:700; color:var(--mxa-ink); font-size:15px; }
+  .ct { font-size:13px; color:var(--mxa-charcoal); }
+</style>
+</head>
+<body>
+  <div class="label">Alcance de los servicios</div>
+  <div class="rule"></div>
+  <div class="clauses">
+    <div class="c"><span class="n">1)</span><span class="ct">Responsabilidad acotada</span></div>
+    <div class="c"><span class="n">2)</span><span class="ct">Criterios técnicos</span></div>
+    <div class="c"><span class="n">3)</span><span class="ct">Marco normativo vigente</span></div>
+  </div>
+</body>
+</html>

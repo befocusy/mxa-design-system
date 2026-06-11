@@ -1,0 +1,46 @@
+/* ===========================================================================
+   MXA — Color tokens
+   Warm, editorial palette from the proposal documents: near-black ink on
+   cream paper, taupe section accents, a cool logo blue used sparingly.
+   =========================================================================== */
+:root {
+  /* --- Base neutrals (warm) --- */
+  --mxa-ink: #080C11;        /* near-black, cover backgrounds + strong headings */
+  --mxa-charcoal: #282828;   /* logo dark, body text on light surfaces */
+  --mxa-graphite: #4A4945;   /* secondary text */
+  --mxa-stone: #8C887F;      /* muted / captions */
+  --mxa-taupe: #C9B8A7;      /* signature accent — section labels, rules */
+  --mxa-sand: #E4DACE;       /* hairlines, subtle borders on cream */
+  --mxa-paper-2: #F3F0E2;    /* secondary surface (beige) */
+  --mxa-paper: #FAF6F1;      /* primary page surface (cream) */
+  --mxa-white: #FFFFFF;
+
+  /* --- Brand blue (logo accent stroke) --- */
+  --mxa-blue: #7ABBE5;
+  --mxa-blue-deep: #4F87AD;  /* darker blue for text/links on cream */
+
+  /* --- Semantic --- */
+  --mxa-danger: #B23A30;     /* corrections / overdue (softened from raw red) */
+  --mxa-success: #5C7C58;    /* approvals / savings */
+
+  /* === Semantic aliases === */
+  --bg-page: var(--mxa-paper);
+  --bg-page-alt: var(--mxa-paper-2);
+  --bg-inverse: var(--mxa-ink);
+  --surface-card: var(--mxa-white);
+  --surface-sunken: var(--mxa-paper-2);
+
+  --text-strong: var(--mxa-ink);
+  --text-body: var(--mxa-charcoal);
+  --text-muted: var(--mxa-stone);
+  --text-on-inverse: var(--mxa-paper);
+  --text-accent: var(--mxa-taupe);
+  --link: var(--mxa-blue-deep);
+
+  --accent: var(--mxa-taupe);
+  --accent-cool: var(--mxa-blue);
+
+  --border-hairline: var(--mxa-sand);
+  --border-strong: var(--mxa-ink);
+  --divider-accent: var(--mxa-taupe);
+}

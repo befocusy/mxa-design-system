@@ -1,0 +1,27 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Radius & shadow" subtitle="Crisp edges; quiet warm shadows" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body { margin:0; font-family: var(--font-body); background: var(--mxa-paper); padding:24px 32px; }
+  .row { display:flex; gap:28px; align-items:center; }
+  .box { width:80px; height:60px; background:var(--mxa-white); border:1px solid var(--mxa-sand); display:flex; align-items:flex-end; justify-content:center; }
+  .lab { font-family:var(--font-mono); font-size:11px; color:var(--mxa-stone); margin-top:8px; text-align:center; }
+  .sep { width:1px; height:80px; background:var(--mxa-sand); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div><div class="box" style="border-radius:0"></div><div class="lab">none</div></div>
+    <div><div class="box" style="border-radius:3px"></div><div class="lab">sm 3</div></div>
+    <div><div class="box" style="border-radius:6px"></div><div class="lab">md 6</div></div>
+    <div><div class="box" style="border-radius:10px"></div><div class="lab">lg 10</div></div>
+    <div class="sep"></div>
+    <div><div class="box" style="border:0;box-shadow:var(--shadow-sm)"></div><div class="lab">shadow-sm</div></div>
+    <div><div class="box" style="border:0;box-shadow:var(--shadow-md)"></div><div class="lab">shadow-md</div></div>
+    <div><div class="box" style="border:0;box-shadow:var(--shadow-lg)"></div><div class="lab">shadow-lg</div></div>
+  </div>
+</body>
+</html>

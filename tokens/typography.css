@@ -1,0 +1,47 @@
+/* ===========================================================================
+   MXA — Typography tokens
+   Display/headings: Ubuntu (Bold 700). Body & UI: Roboto.
+   Proposal scale: section labels ~15pt taupe caps, body ~10–12pt.
+   =========================================================================== */
+:root {
+  /* Families */
+  --font-display: 'Ubuntu', system-ui, sans-serif;   /* headings, cover titles, mxa wordmark contexts */
+  --font-body: 'Roboto', system-ui, sans-serif;       /* paragraphs, tables, UI */
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+
+  /* Weights */
+  --fw-light: 300;   /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium: 500;  /* @kind font */
+  --fw-bold: 700;    /* @kind font */
+
+  /* Type scale (rem, 16px base) — editorial document rhythm */
+  --text-2xs: 0.6875rem;  /* 11px — footer fine print */
+  --text-xs: 0.75rem;     /* 12px — captions, table meta */
+  --text-sm: 0.875rem;    /* 14px — secondary body */
+  --text-base: 1rem;      /* 16px — body */
+  --text-lg: 1.125rem;    /* 18px — lead paragraph */
+  --text-xl: 1.375rem;    /* 22px — sub-headings */
+  --text-2xl: 1.75rem;    /* 28px — page / section titles */
+  --text-3xl: 2.5rem;     /* 40px — cover sub */
+  --text-4xl: 3.5rem;     /* 56px — cover display */
+  --text-5xl: 4.75rem;    /* 76px — hero display */
+
+  /* Line heights */
+  --leading-tight: 1.08;
+  --leading-snug: 1.25;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.7;  /* dense legal/terms body */
+
+  /* Letter spacing */
+  --tracking-label: 0.16em;  /* taupe section labels (uppercase) */
+  --tracking-tight: -0.02em; /* large display */
+  --tracking-normal: 0;
+
+  /* Semantic roles */
+  --role-display: var(--fw-bold) var(--text-4xl)/var(--leading-tight) var(--font-display);
+  --role-title: var(--fw-bold) var(--text-2xl)/var(--leading-snug) var(--font-display);
+  --role-subtitle: var(--fw-medium) var(--text-xl)/var(--leading-snug) var(--font-display);
+  --role-body: var(--fw-regular) var(--text-base)/var(--leading-normal) var(--font-body);
+  --role-body-sm: var(--fw-regular) var(--text-sm)/var(--leading-relaxed) var(--font-body);
+}

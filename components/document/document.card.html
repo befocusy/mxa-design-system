@@ -1,0 +1,58 @@
+<!-- @dsCard group="Components" viewport="700x520" name="Document — labels, tables, clauses, signatures" subtitle="Proposal building blocks" -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin:0; font-family:var(--font-body); background:var(--mxa-paper); padding:28px 32px; color:var(--mxa-ink); }
+  .grp { margin-bottom:26px; }
+  .grp:last-child { margin-bottom:0; }
+  .grp-label { font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--mxa-stone); margin:0 0 14px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+  const { SectionLabel, DataTable, ClauseList, SignatureBlock, DocFooter } = window.MXADesignSystem_5dc0a4;
+  function Demo(){
+    return (
+      <div>
+        <div className="grp">
+          <SectionLabel eyebrow="Honorarios profesionales" title="Estimación en USD" />
+        </div>
+        <div className="grp">
+          <DataTable
+            columns={[
+              { key:'c', label:'Concepto', strong:true },
+              { key:'d', label:'Detalle' },
+              { key:'h', label:'Honorarios', align:'right' },
+            ]}
+            rows={[
+              { c:'Servicios de consultoría', d:'Por única vez', h:'USD 2.000' },
+              { c:'Optimización fiscal', d:'10% de la eficiencia fiscal (*)', h:'10%' },
+            ]} />
+        </div>
+        <div className="grp">
+          <p className="grp-label">Cláusulas (Anexo)</p>
+          <ClauseList items={[
+            'La responsabilidad de MXA se encontrará acotada al objeto de los servicios descritos en el capítulo de alcance.',
+            'Los servicios se realizarán siguiendo los criterios técnicos generalmente aplicados en el asesoramiento a clientes.',
+          ]} />
+        </div>
+        <div className="grp">
+          <p className="grp-label">Firma</p>
+          <SignatureBlock signatory={{ name:'Nicolás May', role:'MXA', email:'nmay@mxa.com.uy' }} />
+        </div>
+        <DocFooter page="06 / 10" />
+      </div>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body>
+</html>
